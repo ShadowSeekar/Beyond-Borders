@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>International Getaway</title>
     <link rel="stylesheet" href="index.css" type="text/css"> <!--{% static 'index.css'%}-->
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script src="index.js"></script>
 </head>
 
@@ -94,8 +95,8 @@
     </div>
 
     <section class="tab">
-        
-        <form action="res" method="POST">
+        <form action="https://send.pageclip.co/Uoqm3nvf7TcpI8NOAsvPFP3QCvBkfcqS" class="pageclip-form" method="post">
+        <!--<form action="res" method="POST">-->
             <!--{% csrf_token %}-->
             <fieldset>
                 <div class="name"><input type="text" name="name" maxlength="42" id="inp"><span></span><label for="name" id="label">Name</label></div>
@@ -112,12 +113,12 @@
                     <option>United Kingdom</option>
                     <option>Germany</option>
                 </select>-->
-                <input class="r" type="reset" value="Reset">
+                <input class="r" type="reset" value="Reset" class="pageclip-form__submit">
                 <input class="s" type="submit" value="Submit">
             </fieldset>
         </form>
 
     </section>
-
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>
