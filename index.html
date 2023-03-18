@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>International Getaway</title>
     <link rel="stylesheet" href="index.css" type="text/css"> <!--{% static 'index.css'%}-->
-    <script src="index.js"></script>
+    
 </head>
 
 <body>
@@ -98,12 +98,12 @@
         <form action="res" method="POST">
             <!--{% csrf_token %}-->
             <fieldset>
-                <div class="fbox"><input type="text" name="name" maxlength="42" id="inp"><span></span><label for="name" id="label">Name</label></div>
+                <div class="fbox"><input type="text" name="name" maxlength="42" id="inp" class="reqrem"><span></span><label for="name" id="label">Name</label></div>
                 <div class="fbox"><input type="number" name="cgpa" max="10" step="any" required id="inp"><span></span><label for="cgpa" id="label">CGPA</label></div>
-                <div class="fbox"><input type="number" name="gre" max="340" step="any" id="inp"><span></span><label for="gre" id="label">GRE Score</label></div>
-                <div class="fbox"><input type="number" name="toefl" max="120" step="any" id="inp"><span></span><label for="toefl" id="label">TOEFL Score</label></div>
-                <div class="fbox"><input type="text" name="country" id="inp"><span></span><label for="country" id="label">Country</label></div>
-
+                <div class="fbox"><input type="number" name="gre" max="340" step="any"  class="reqrem" id="inp"><span></span><label for="gre" id="label">GRE Score</label></div>
+                <div class="fbox"><input type="number" name="toefl" max="120" step="any"  class="reqrem" id="inp"><span></span><label for="toefl" id="label">TOEFL Score</label></div>
+                <div class="fbox"><input type="text" name="country" class="reqrem" id="inp"><span></span><label for="country" id="label">Country</label></div>
+                
                 <!--<select>
                     <option>Select a preferred country:</option>
                     <optgroup label="America">
