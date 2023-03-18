@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>International Getaway</title>
     <link rel="stylesheet" href="index.css" type="text/css"> <!--{% static 'index.css'%}-->
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script src="index.js"></script>
 </head>
 
@@ -16,29 +15,29 @@
     <header>
         <nav>
             <img src="https://teachbeyond.org/site-content/uploads/Beyond-Borders-Logo-2.png" id="header-img">
-            <ul id="nali">
-                <li id="na"><a href="" id="nl">Home</a></li>
-                <li id="na"><a href="" id="nl">About</a></li>
-                <li id="na"><a href="FAQ\FAQ.html" id="nl" target="_blank">FAQ</a></li>
+            <ul id="nav-list">
+                <li id="nav-item"><a href="" id="nav-link">Home</a></li>
+                <li id="nav-item"><a href="" id="nav-link">About</a></li>
+                <li id="nav-item"><a href="FAQ\FAQ.html" id="nav-link">FAQ</a></li>
             </ul>
         </nav>
     </header>
    
     <div id="wel">
-        <p id="wtxt">Welcome to BEYOND BORDERS</p>
+        <p id="wel-txt">Welcome to BEYOND BORDERS</p>
     
-        <div id="oioioi">
-            <p id="wdt">Welcome, to our website dedicated to helping Indian students study abroad! Studying abroad is an incredible experience that can have a profound impact on your personal, academic, and professional growth. It provides a unique opportunity to immerse yourself in a new culture, learn a new language, and gain a fresh perspective on the world. However, the process of planning and preparing for studying abroad can be daunting and overwhelming. Our website is here to guide you through the process and help you make the most of your study abroad experience. We offer a wealth of resources, tips, and advice on everything from choosing a program to adjusting to life in a new country. Whether you're considering studying abroad for the first time or you're a seasoned traveler, we're here to support you every step of the way.</p>
+        <div id="info-block">
+            <p id="wel-info">Welcome, to our website dedicated to helping Indian students study abroad! Studying abroad is an incredible experience that can have a profound impact on your personal, academic, and professional growth. It provides a unique opportunity to immerse yourself in a new culture, learn a new language, and gain a fresh perspective on the world. However, the process of planning and preparing for studying abroad can be daunting and overwhelming. Our website is here to guide you through the process and help you make the most of your study abroad experience. We offer a wealth of resources, tips, and advice on everything from choosing a program to adjusting to life in a new country. Whether you're considering studying abroad for the first time or you're a seasoned traveler, we're here to support you every step of the way.</p>
         </div>
-        <div class="arrow arrow-first"></div>
-        <div class="arrow arrow-second"></div>
+        <!--<div class="arrow arrow-first"></div>
+        <div class="arrow arrow-second"></div>-->
     </div>
 
-    <div id="que">
-        <p>Why Use a University Recommendation System  Rather than Google or Online Counselling ?</p>
+    <div id="ques">
+        <p>Why use a University Recommendation System  rather than Google or Online Counselling ?</p>
     </div>
 
-    <div id="par">
+    <div id="reason">
 
     <main>
     
@@ -90,20 +89,20 @@
     </main>
     </div>
 
-    <div id="info">
-        <p class="hed">Let Us Get To Know You</p>
+    <div id="user-info">
+        <p class="user-know">Let Us Get To Know You</p>
     </div>
 
-    <section class="tab">
-        <form action="https://send.pageclip.co/Uoqm3nvf7TcpI8NOAsvPFP3QCvBkfcqS" class="pageclip-form" method="post">
-        <!--<form action="res" method="POST">-->
+    <section class="form-background">
+        
+        <form action="res" method="POST">
             <!--{% csrf_token %}-->
             <fieldset>
-                <div class="name"><input type="text" name="name" maxlength="42" id="inp"><span></span><label for="name" id="label">Name</label></div>
-                <div class="name"><input type="number" name="cgpa" max="10" step="any" required id="inp"><span></span><label for="cgpa" id="label">CGPA</label></div>
-                <div class="name"><input type="number" name="gre" max="340" step="any" id="inp"><span></span><label for="gre" id="label">GRE Score</label></div>
-                <div class="name"><input type="number" name="toefl" max="120" step="any" id="inp"><span></span><label for="toefl" id="label">TOEFL Score</label></div>
-                <div class="name"><input type="text" name="country" id="inp"><span></span><label for="country" id="label">Country</label></div>
+                <div class="fbox"><input type="text" name="name" maxlength="42" id="inp"><span></span><label for="name" id="label">Name</label></div>
+                <div class="fbox"><input type="number" name="cgpa" max="10" step="any" required id="inp"><span></span><label for="cgpa" id="label">CGPA</label></div>
+                <div class="fbox"><input type="number" name="gre" max="340" step="any" id="inp"><span></span><label for="gre" id="label">GRE Score</label></div>
+                <div class="fbox"><input type="number" name="toefl" max="120" step="any" id="inp"><span></span><label for="toefl" id="label">TOEFL Score</label></div>
+                <div class="fbox"><input type="text" name="country" id="inp"><span></span><label for="country" id="label">Country</label></div>
 
                 <!--<select>
                     <option>Select a preferred country:</option>
@@ -113,12 +112,12 @@
                     <option>United Kingdom</option>
                     <option>Germany</option>
                 </select>-->
-                <input class="r" type="reset" value="Reset" class="pageclip-form__submit">
-                <input class="s" type="submit" value="Submit">
+                <input class="reset-button" type="reset" value="Reset">
+                <input class="submit-button" type="submit" value="Submit">
             </fieldset>
         </form>
 
     </section>
-<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
 </body>
 </html>
