@@ -23,8 +23,8 @@ main {
   }
   
   /* Add a background color and padding to the footer */
-  .tab {
-    cbackground-image: url("https://external-preview.redd.it/RelhcXTdpq29udXDwRRoL-whIPfc2H1t9tap2UHaGqs.png?width=1080&height=565.445026178&auto=webp&s=aa748dadb098f3ca99d00bd12ab3545b8b10b54c");
+  .form-background {
+    background-image: url("https://external-preview.redd.it/RelhcXTdpq29udXDwRRoL-whIPfc2H1t9tap2UHaGqs.png?width=1080&height=565.445026178&auto=webp&s=aa748dadb098f3ca99d00bd12ab3545b8b10b54c");
     padding: 80px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,11 +41,12 @@ main {
   }
   fieldset{
     padding: 20px;
-    border-radius: 10px;
-    border-color: #a4b9a570;
+    border: 0;
+    /*border-radius: 10px;*/
+    /*border-color: #a4b9a570;*/
     background: transparent;
     backdrop-filter: blur(15px);
-    border-width: 5px;
+    /*border-width: 5px;*/
     width: 500px;
     color: #f2f2f2;
     height: 525px;
@@ -151,7 +152,7 @@ button:hover {
   opacity: 1;
 }
 
-.s{
+.submit-button{
   display: block;
   margin: 0 38%;
   background-color: #4CAF50;
@@ -165,7 +166,7 @@ button:hover {
   width: 100px;
 }
 
-.r{
+.reset-button{
   display: block;
   margin: 0 38%;
   background-color: lightseagreen;
@@ -179,7 +180,7 @@ button:hover {
   width: 100px;
 }
 
-.hed{
+.user-know{
   text-align: center;
   font-size: 1.6rem;
 }
@@ -190,7 +191,7 @@ button:hover {
   gap: 20px;
 }
 
-#nali {
+#nav-list {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -198,16 +199,16 @@ button:hover {
   padding-top: 5px;
 }
 
-#na {
+#nav-item {
   padding: 15px;
 }
 
-#nl {
+#nav-link {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
-.nl:hover:active {
+.nav-link:hover:active {
   text-decoration: none;
   color: black;
 }
@@ -243,7 +244,7 @@ header{
   padding-top: 100px;
   background-attachment: fixed;   /*parallax*/
 }
-#wtxt {
+#wel-txt {
   color: #f2f2f2;
   text-align: center;
   padding-top: 120px;
@@ -254,20 +255,20 @@ header{
   font-size: 72px;
   font-family: Arial,Helvetica,sans-serif;
 }
-#wdt {
+#wel-info {
   color: #f2f2f2;
   text-align: center;
   font-family: Arial,Helvetica,sans-serif;
   padding: 70px;
 }
-#oioioi {
+#info-block {
   border: 5px solid #4CAF50;
   border-radius: 10px;
   margin: 70px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#par {
+#reason {
   background-image: url("https://get.wallhere.com/photo/drawing-colorful-illustration-digital-art-abstract-artwork-symmetry-graphic-design-glass-pattern-geometry-circle-ART-light-color-shape-design-line-modern-art-243800.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,7 +279,7 @@ header{
   background-attachment: fixed;
   color: aliceblue;
 }
-#que {
+#ques {
   display: block;
   margin: 0;
   text-align: center;
@@ -287,7 +288,7 @@ header{
   padding: 40px;
   color: #f2f2f2;
 }
-#info {
+#user-info {
   display: block;
   background-color: blanchedalmond;
   height: 70px;
@@ -296,12 +297,12 @@ header{
 #label {
   display: block;
 }
-form .name {
+form .fbox {
   position: relative;
   border-bottom: 2px solid #adadad;
   margin: 30px 0;
 }
-.name input {
+.fbox input {
   width: 100%;
   padding: 0 5px;
   height: 40px;
@@ -310,7 +311,7 @@ form .name {
   background: none;
   outline: none;
 }
-.name label {
+.fbox label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -320,7 +321,7 @@ form .name {
   pointer-events: none;
   transition: .5s;
 }
-.name span::before {
+.fbox span::before {
   content: '';
   position: absolute;
   top: 40px;
@@ -330,22 +331,20 @@ form .name {
   background: #2691d9;
   transition: .5s;
 }
-.name input:focus ~ label {
+.fbox input:focus ~ label {
   top: -5px;
   color: #2691d9;
 }
-.name input:focus ~ span::before {
+.fbox input:focus ~ span::before {
   width: 100%;
 }
-select {
-  width: 100%;
-  padding: 0 5px;
-  height: 40px;
+.fbox label::after {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
   font-size: 16px;
-  border: none;
-  background: none;
-  outline: none;
-  border-bottom: 3px solid #2691d9;
+  pointer-events: none;
 }
 
 /*
