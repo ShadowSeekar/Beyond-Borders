@@ -16,9 +16,9 @@
         <nav>
             <img src="https://teachbeyond.org/site-content/uploads/Beyond-Borders-Logo-2.png" id="header-img">
             <ul id="nav-list">
-                <li id="nav-item"><a href="#wel" id="nav-link">Home</a></li>
-                <li id="nav-item"><a href="" id="nav-link">About</a></li>
-                <li id="nav-item"><a href="FAQ\FAQ.html" id="nav-link">FAQ</a></li>
+                <p id="nav-item"><a href="#wel" id="nav-link" onclick="sctollToTop()">Home</a></p>
+                <p id="nav-item"><a href="" id="nav-link">About</a></p>
+                <p id="nav-item"><a href="FAQ\FAQ.html" id="nav-link">FAQ</a></p>
             </ul>
         </nav>
     </header>
@@ -41,49 +41,51 @@
 
     <main>
     
-    <section>
+    <section class="cards">
     
-    <p>Here Are Some of the Major Benefits of Using  a University Recommendation System : </p>
+    <!--<p>Here Are Some of the Major Benefits of Using  a University Recommendation System : </p>-->
 
-    <ul>
-        <li>
+    
+    <div class="card">
+        <p>
             <strong>Personalization:</strong> A recommendation system can personalize recommendations based on a student's specific interests, academic background, and career goals. This level of personalization can save students time and effort in searching for relevant information.
-        </li>
+        </p>
 
-        <li>
+        <p>
             <strong>Comprehensive:</strong> A recommendation system can provide students with a comprehensive view of available courses, programs, and resources that they may not have been aware of through a Google search or counseling.
-        </li>  
-            
-        <li>
+        </p>  
+    </div>
+        <!--<p>
             <strong>Efficient:</strong> A recommendation system can make the search process more efficient by suggesting courses and programs that are relevant to a student's interests and goals. This saves students time and effort that would otherwise be spent sifting through irrelevant information.
-        </li>  
-        
-        <li>
+        </p>-->
+    <div class="card">
+        <p>
             <strong>Consistent</strong>: A recommendation system can provide consistent advice and guidance to students, regardless of the counselor's workload or experience.
-        </li>
+        </p>
 
-        <li>
+        <p>
             <strong>Accessible:</strong> A recommendation system can be accessed 24/7, making it more accessible to students who may not have the time or resources to visit a counselor in person.
-        </li>
-
-        <li>
-            
+        </p>
+    </div>
+    <div class="card">
+        <p>
             <strong>Data-driven:</strong> A recommendation system can use data and analytics to continuously improve the relevance and accuracy of its recommendations, providing students with the most up-to-date information.
         
-        </li>
+        </p>
         
-        <li>
+        <p>
 
             <strong>Unbiased:</strong> A recommendation system can provide unbiased recommendations, free from personal biases or opinions that may influence the advice provided by a counselor.
         
-        </li>
-    </ul>
+        </p>
+    </div>
+   
 
-    <p>
+    <!--<p>
         Overall, a university recommendation system can provide students with a personalized, comprehensive, efficient, consistent, accessible, data-driven, and unbiased source of information and guidance when it comes to choosing courses, programs, and resources that best fit their interests and career goals.
     </p>
 
-    <p>But Before We can help you we must get to know you, So please fill the Fields Given Below in the form and Submit.</p>
+    <p>But Before We can help you we must get to know you, So please fill the Fields Given Below in the form and Submit.</p>-->
 
     </section>
     </main>
@@ -98,11 +100,11 @@
         <form action="res" method="POST">
             <!--{% csrf_token %}-->
             <fieldset>
-                <div class="fbox"><input type="text" name="name" maxlength="42" id="inp" class="reqrem"><span></span><label for="name" id="label">Name</label></div>
-                <div class="fbox"><input type="number" name="cgpa" max="10" step="any" required id="inp"><span></span><label for="cgpa" id="label">CGPA</label></div>
-                <div class="fbox"><input type="number" name="gre" max="340" step="any"  class="reqrem" id="inp"><span></span><label for="gre" id="label">GRE Score</label></div>
-                <div class="fbox"><input type="number" name="toefl" max="120" step="any"  class="reqrem" id="inp"><span></span><label for="toefl" id="label">TOEFL Score</label></div>
-                <div class="fbox"><input type="text" name="country" class="reqrem" id="inp"><span></span><label for="country" id="label">Country</label></div>
+                <div class="fbox"><input type="text" name="name" maxlength="42" id="inp" class="reqrem"><label for="name" id="label">Name</label></div>
+                <div class="fbox"><input type="number" name="cgpa" max="10" step="any" required id="inp"><label for="cgpa" id="label">CGPA</label></div>
+                <div class="fbox"><input type="number" name="gre" max="340" step="any"  class="reqrem" id="inp"><label for="gre" id="label">GRE Score</label></div>
+                <div class="fbox"><input type="number" name="toefl" max="120" step="any"  class="reqrem" id="inp"><label for="toefl" id="label">TOEFL Score</label></div>
+                <div class="fbox"><input type="text" name="country" class="reqrem" id="inp"><label for="country" id="label">Country</label></div>
                 
                 <!--<select>
                     <option>Select a preferred country:</option>
@@ -116,7 +118,7 @@
                 <input class="submit-button" type="submit" value="Submit">
             </fieldset>
         </form>
-
+        
     </section>
 
 </body>
