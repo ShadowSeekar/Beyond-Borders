@@ -29,7 +29,7 @@ main {
     background-size: cover;
     color: #f2f2f2;
     background-attachment: fixed;
-    height: 650px;
+    height: auto;
   }
   
   /* Style the form inputs and labels */
@@ -38,13 +38,6 @@ main {
     flex-direction: column;
     align-items: center;
   }
-
-
-
-
-
-
-
 
   form label {
     font-weight: bold;
@@ -133,7 +126,7 @@ form input[type="reset"]:hover {
 form input[type="radio"]{
   margin: 20px;
 }
-button {
+/*button {
   border: 0;
   padding: 20px;
   background-color: chocolate;
@@ -144,7 +137,7 @@ button {
 button:hover {
   cursor: pointer;
   opacity: 1;
-}
+}*/
 
 .submit-button{
   display: block;
@@ -234,14 +227,14 @@ header{
   background-repeat: no-repeat;
   display: block;
   width: 100%;
-  height: 780px;
-  padding-top: 100px;
+  height: auto;
+  padding-top: 90px;
   background-attachment: fixed;   /*parallax*/
 }
 #wel-txt {
   color: #f2f2f2;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 100px;
   text-transform: uppercase;
   vertical-align: baseline;
   text-align: center;
@@ -268,7 +261,7 @@ header{
   background-repeat: no-repeat;
   display: block;
   width: 100%;
-  height: 450px;
+  height: auto;
   padding: 10px;
   background-attachment: fixed;
   color: aliceblue;
@@ -490,7 +483,8 @@ input:focus ~ label {
   transition: 0.6s;
   transform: translate(0);
   font-weight: 400;
-  margin: 60px;
+  margin: 4%;
+  box-shadow: 16px 16px 24px #212121;
 }
 .card:hover {
   color: #ffffff;
@@ -516,5 +510,85 @@ input:focus ~ label {
 .cards {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
+  margin-left: 5.3%;
+}
+
+.m-btn {
+  margin: 10px auto;
+  width: 40px;
+  height: 80px;
+  border: 3px solid #7a7a7c;
+  border-radius: 20px;
+  display: flex;
+}
+.m-scroll {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #737375;
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling 1s linear infinite;
+}
+.container {
+  color: #c2c2c2;
+  padding-bottom: 10px;
+}
+@keyframes scrolling {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+.streamlit {
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.stream {
+  text-align: center;
+  padding: 20px;
+}
+
+.result {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 48px;
+  box-shadow: 
+    6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px;
+}
+.result:hover {
+  color: #ffffff;
+}
+.result::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 0;
+  border-radius: 48px;
+  background-image: linear-gradient(to right, #3bd9d9 0%, #b527cf 100%);
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.result:hover::before {
+  width: 100%;
 }
