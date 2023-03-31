@@ -592,3 +592,6 @@ input:focus ~ label {
 .result:hover::before {
   width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
